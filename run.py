@@ -273,61 +273,7 @@ def contact():
 		time.sleep(2)
 		back()
 		#-------------------[APPROVAL SYSTEM]------------------#
-def approval():
 
-  os.system('git pull')
-
-  time.sleep(1)
-
-  uuid = str(os.geteuid())+"1000"+str(os.geteuid())
-
-  id = "999-"+"".join(uuid)
-
-  os.system('clear')
-
-  animation("\33[1;37m [\001b[36m•\33[1;37m] You Need Approval To Use This Tool   \33[1;37m")
-
-  print("\33[1;37m [\001b[36m•\33[1;37m] Your Key :\001b[36m "+id);time.sleep(0.1)
-
-  print ("""\33[1;37m----------------------------------------------""")
-
-  try:
-
-    httpCaht = requests.get("https://github.com/NIKI-DON/NIKI-DONblob/main/Approval").text
-
-    if id in httpCaht:
-
-      animation("\33[1;97m >> WELCOME TIMRO APPROVAL BHIYO !!!")
-
-      msg = str(os.geteuid())
-
-      time.sleep(1)
-
-      pass
-
-    else: 
-
-      animation("\1b[1;97m >> Soriee TIMRO KEY APPROVE XAINA");
-
-      time.sleep(0.1)
-
-      input(' >> Click Enter To Send Your Key ')
-
-      os.system('xdg-open t.me/UbiDon/')
-
-      time.sleep(1)
-
-      exit()
-
-  except: 
-
-     animation(" >> Unable To Fetch Data From Server ")
-
-     time.sleep(2)
-
-     exit() 
-
-approval()
 		#--------------------[ LOGIN ]--------------#
 
 def login123():
